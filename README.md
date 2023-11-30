@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+<h1 align="center"> HUBusca</h1>
+<p align="center">
+  <img alt="React " src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img alt="Axios" src="https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white" />
+  <img alt="Styled Components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  Aplicação react para buscar com mais facilidade e rapidez os repositórios dos devs no GitHub.
+</p>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
 
-## Expanding the ESLint configuration
+## Buscar Usuário
+- Na tela princiapal deve ter a funcionalidade de buscar dados dos usuários do GitHub através do nome de usuário.
+- Exibir foto, nome, login e localização do usuário.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Perfil 
+- Perfil detalhado com informações fornecidas pela API do GitHub.
+- Exibir foto, nome, login, localização, ID, quantidade de seguidores, quantidade de repositórios públicos.
+- Lista de repositórios com detalhes (nome, linguagem, descrição, data de criação, data do último push).
 
-- Configure the top-level `parserOptions` property like this:
+  
+## Encaminhar para Repositório
+- Navegação para a página correspondente no site do GitHub ao clicar em um repositório.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Histórico de Buscas
+-  Menu que permite visualizar as buscas realizadas de usuários(contendo os mesmo dados da Busca de Usuário) e retornar para o perfil.
+
+# Tecnologias utilizadas:
+   - React
+   - TypeScript
+   - Axios
+   - Styled-components 
+
+
+# Como Rodar o Projeto
+
+Siga os passos abaixo para rodar o projeto localmente em sua máquina.
+
+## Pré-requisitos
+- [Node.js](https://nodejs.org/)
+- [Npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
+
+## Clonar o Repositório
+- Faça o clone do repositório na sua máquina
+
+## Instalar as Dependências
+```bash
+npm install
+# ou
+yarn install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Executar o Projeto
+
+```bash
+npm start
+# ou
+yarn start
+```
