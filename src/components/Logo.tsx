@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import logo from '../assets/lg.png'
 
 const LogoConatiner = styled.div`
     display: flex;
@@ -15,7 +16,7 @@ const LogoConatiner = styled.div`
 export function Logo() {
     return (
         <LogoConatiner>
-            <img src="src\assets\lg.png" alt="logo da hubusca" />
+            <img src={logo} alt="logo da hubusca" />
         </LogoConatiner>
     )
 }
