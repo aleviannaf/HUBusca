@@ -12,7 +12,7 @@ const LogoConatiner = styled.div`
     }
 `
 
-export default function Logo() {
+export function Logo() {
     return (
         <LogoConatiner>
             <img src="src\assets\lg.png" alt="logo da hubusca" />
